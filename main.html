@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>School Website</title>
+        <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    
+    <body>
+
+
+<div class="width-100 top-header">
+<div class="container">
+    <b>NEWS :</b>
+    <marquee> Jai maa Saraswati, Bharat Mata ki jai </marquee>
+</div>
+</div>
+
+<header>
+    <div class="container">
+        <div class="heads">
+            <div class="logo">
+                <img src="images/logo.jpg">
+     </div>
+
+           
+            </header>
+
+<div class="w-100">
+    <img src="images/slider2.jpg.png" class="slider">
+</div>
+
+
+
+
+<section class="gallery-section">
+  <h2>📷 School Memories Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/c.jpg" alt="Republic Day">
+      <div class="overlay-caption">Republic Day</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/a.jpg" alt="Independence Day">
+      <div class="overlay-caption">Independence Day</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/e.jpg" alt="Classroom Activity">
+      <div class="overlay-caption">Classroom Group Image</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/b.jpg" alt="Cultural Program">
+      <div class="overlay-caption">Cultural Program</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+                        <!-- Glowing Buttons Section -->
+<div class="glow-buttons">
+  <a href="student.html" class="glow-btn red">🏫 Students</a>
+  <a href="homework.html" class="glow-btn green">📘 Homework</a>
+  <a href="notices.html" class="glow-btn orange">📢 Notices</a>
+  <a href="result.html" class="glow-btn purple">📚 Results</a>
+  <a href="#contact" class="glow-btn yellow">📞 Contact</a>
+  <a href="https://deoriasvm.com/Student-Login" class="glow-btn blue" target="_blank">💳 Pay Fee</a>
+ 
+
+
+</div>
+
+<!-- CONTACT SECTION -->
+<div id="contact" class="contact-card">
+  <h2>📞 Contact Us</h2>
+  <p>🏠 <strong>School Address:</strong> Saraswati Senior Secondary Vidya Mandir, Deoria Khas, Deoria (U.P.)</p>
+  <p>👨‍🏫 <strong>Class Teacher Phone:</strong> <a href="tel:+917238998563">+91 7238998563</a></p>
+  <p>💬 <strong>Developer WhatsApp:</strong> <a href="https://wa.me/7379811967" target="_blank">Chat on WhatsApp</a></p>
+  <p>📧 <strong>Developer Email:</strong> <a href="mailto:can't provide">can't provide</a></p>
+</div>
+
+
+<!-- Fly to Top Button -->
+<div class="fly-container">
+  <button onclick="launchRocket()" class="fly-to-top-btn">
+    <span class="rocket">🚀</span> Rocket to Top
+  </button>
+
+  <!-- Rocket animation element (hidden initially) -->
+  <div id="rocket-launch" class="rocket-animation">🚀</div>
+</div>
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+  <p>© 2025 SSVM Class 9C | 🙏 Made with Faith & Love by <strong>Anuj Gupta</strong> </p>
+</footer>
+
+<script>
+function launchRocket() {
+  const rocket = document.getElementById("rocket-launch");
+  rocket.style.display = "block";
+  rocket.style.animation = "flyUp 0.1s ease-out forwards";
+
+  // Scroll to top after short delay
+  setTimeout(() => {
+    rocket.style.display = "none";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, 1000);
+}
+</script>
+
+
+<div class="bottom-buttons">
+  
+  <a href="homepage.html" class="back-home-btn">🏠</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSVM Class Website</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link your external CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff3e0; /* Warm background */
+    }
+
+    .menu-icon {
+      font-size: 30px;
+      padding: 12px 20px;
+      cursor: pointer;
+      background-color: orange;
+      color: white;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1001;
+      border-radius: 8px;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #ffecb3;
+      padding-top: 60px;
+      transition: 0.3s;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 16px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .sidebar a:hover {
+      background-color: #ffe082;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 28px;
+      cursor: pointer;
+      color: red;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-icon {
+        font-size: 26px;
+      }
+
+      .sidebar {
+        width: 200px;
+      }
+
+      .sidebar a {
+        padding: 14px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Hamburger Toggle Button -->
+<div class="unique-menu-toggle" onclick="toggleSidebar(this)">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <a href="index.html">🏠 Home</a>
+  <a href="homework.html">📒 Homework</a>
+  <a href="gallery.html">🖼️ Gallery</a>
+  <a href="student.html">👩‍🎓 Students List</a>
+  <a href="result.html">📚 Results</a>
+    <a href="#contact">📞 CONTACT US</a>
+    <a href="https://deoriasvm.com/Student-Login" target="_blank">💳 FEE PAYMENT</a>
+    <a href="#">📤 SHARE WEBSITE</a>
+    <div class="close-btn" onclick="toggleMenu()">×</div>
+  </div>
+
+ 
+
+  <!-- JS Script -->
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
+    }
+  </script>
+
+
+
+
+<script>
+  function toggleSidebar(btn) {
+    btn.classList.toggle("active");
+    document.getElementById("sidebar").classList.toggle("open");
+  }
+</script>
+
+
+
+
+
+
+
+                 
+
+      
+
+
+
+    </body>
+    </html>

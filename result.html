@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Result List - 9C</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #fff3e0, #ffe0b2);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .box {
+      background: linear-gradient(135deg, #ffcc80, #ffe082);
+      padding: 50px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+    }
+
+    .glow-text {
+      font-size: 36px;
+      font-weight: bold;
+      color: #bf360c;
+      text-shadow: 0 0 5px #fff, 0 0 15px orange, 0 0 25px orange;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #fff, 0 0 10px orange, 0 0 15px orange;
+      }
+      to {
+        text-shadow: 0 0 15px #fff, 0 0 30px orange, 0 0 40px orange;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .glow-text {
+        font-size: 24px;
+      }
+      .box {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="glow-text">👩‍🎓 Coming Soon 👨‍🎓</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Reset everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.main-content p,
+.main-content p2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Glowing button */
+.btn,
+button {
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00c6ff, 0 0 30px #0072ff;
+  animation: glow 1.5s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
+  }
+  50% {
+    box-shadow: 0 0 20px #00c6ff, 0 0 40px #0072ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
+  }
+}
+
+/* Footer styles */
+footer {
+  width: 100%;
+  background: #0d47a1;
+  padding: 20px 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.glow-text {
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #64b5f6, 0 0 20px #64b5f6;
+}
+
+/* 🌐 Responsive Styles */
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 30px 10px;
+  }
+
+  .main-content h1 {
+    font-size: 2rem;
+  }
+
+  .main-content p,
+  .main-content p2 {
+    font-size: 1rem;
+  }
+
+  .btn,
+  button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .glow-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .btn,
+  button {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    width: 50px;
+  }
+}
